@@ -20,6 +20,8 @@ Resources file names are written in __lowercase_underscore__.
 Naming conventions for drawables:
 
 
+.png
+
 | Asset Type   | Prefix            |		Example               |
 |--------------| ------------------|-----------------------------|
 | Action bar   | `ab_`             | `ab_stacked.9.png`          |
@@ -30,6 +32,14 @@ Naming conventions for drawables:
 | Menu         | `menu_	`           | `menu_submenu_bg.9.png`     |
 | Notification | `notification_`	| `notification_bg.9.png`     |
 | Tabs         | `tab_`            | `tab_pressed.9.png`         |
+
+
+.xml
+
+| Asset Type   | Prefix            |		Example               |
+|--------------| ------------------|-----------------------------|
+| Background   | `background_`             | `background_rounded_.xml`   |
+| States/Seletor       | `button_`	            | `button_.xml`    |
 
 Naming conventions for icons (taken from [Android iconography guidelines](http://developer.android.com/design/style/iconography.html)):
 
@@ -63,6 +73,7 @@ Layout files should match the name of the Android components that they are inten
 | Fragment         | `SignUpFragment`       | `fragment_sign_up.xml`        |
 | Dialog           | `ChangePasswordDialog` | `dialog_change_password.xml`  |
 | AdapterView item | ---                    | `item_person.xml`             |
+| Group view | DirectionViewSet                    | `viewset_direction.xml`             |
 | Partial layout   | ---                    | `partial_stats_bar.xml`       |
 
 A slightly different case is when we are creating a layout that is going to be inflated by an `Adapter`, e.g to populate a `ListView`. In this case, the name of the layout should start with `item_`.
